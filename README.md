@@ -11,12 +11,20 @@ Core Components: Data Extraction and Text Analysis
 Steps:
 
 WebDriver Setup: Initialize a headless Chrome WebDriver using Selenium with specified options.
+
 Data Extraction Function: Create a function to navigate to a URL, extract content based on class names, and save it to a text file.
+
 Excel Data Retrieval: Read URLs and IDs from an input Excel file using Pandas.
+
 URL Iteration: Iterate through each URL, extract data, and generate unique text files based on IDs.
+
 Exception Handling: Use try-except blocks to handle extraction exceptions, attempting alternative class names if needed.
+
 Output Directory Setup: Create an "output_files" directory for storing generated text files.
-2.Text-Analysis: Introduction to Text Analysis Steps: The text analysis process involves two major components: Sentimental Analysis and Analysis of Readability. Sentimental Analysis determines the positivity or negativity of the text, while Readability Analysis assesses the complexity and structure of the text. Sentimental Analysis Steps:
+
+2.Text-Analysis: Introduction to Text Analysis Steps: The text analysis process involves two major components: Sentimental Analysis and Analysis of Readability. Sentimental Analysis determines the positivity or negativity of the text, while Readability Analysis assesses the complexity and structure of the text.
+
+Sentimental Analysis Steps:
 
 • Cleaning with Stop Words Lists: Utilize Stop Words Lists to clean the text for Sentiment Analysis, excluding common words.
 
@@ -24,7 +32,9 @@ Output Directory Setup: Create an "output_files" directory for storing generated
 
 • Extracting Derived Variables: Tokenize the text using NLTK, calculate Positive Score, Negative Score, Polarity Score, and Subject
 
-Readability Analysis Steps: • Gunning Fox Index: Calculate Average Sentence Length, Percentage of Complex Words, and Fog Index using the Gunning Fox Index formula.
+Readability Analysis Steps:
+
+• Gunning Fox Index: Calculate Average Sentence Length, Percentage of Complex Words, and Fog Index using the Gunning Fox Index formula.
 
 • Average Number of Words Per Sentence: Determine the average number of words per sentence.
 
@@ -46,4 +56,6 @@ Efficient Data Extraction: Selenium pipeline for dynamic web data extraction fac
 
 Sentiment Analysis: Tailored algorithm for financial texts includes cleaning, positive/negative word dictionaries, and sentiment score derivation.
 
-Readability Assessment:Gunning Fox Index is used for readability metrics like sentence length, complex words, and Fog Index. Textual Insights: Integrating data extraction, sentiment, and readability analyses provides a holistic understanding of web content
+Readability Assessment:Gunning Fox Index is used for readability metrics like sentence length, complex words, and Fog Index.
+
+Textual Insights: Integrating data extraction, sentiment, and readability analyses provides a holistic understanding of web content
